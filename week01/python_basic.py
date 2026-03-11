@@ -388,7 +388,7 @@ print(c)
 print(range(5))
 print(list(range(5)))
 print(list(range(5,10)))
-print(list(ragne(5,10,2)))
+print(list(range(5,10,2)))
 
 for i in range(5, 20 ,3):
     print(i)
