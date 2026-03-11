@@ -350,6 +350,22 @@ print(int('3')) # x를 정수 형태로 반환
 print(str(3)) # x를 문자열 형태로 반환
 
 #x를 리스트로 반환
-print(lsit("Python"))
+print(list("Python"))
 print((1,2,3))
 
+#x를 튜플로 반환
+print(tuple("Python"))
+print(tuple([1,2,3]))
+
+#x의 자료형을 반환
+print(type("abc"))
+print(type(a))
+
+# 간단한 갑입형 함수 생성
+sum = lambda a, b: a + b
+
+print(sum(3,5))
+
+#최대, 최소값 반환
+print(max(1,4,2,8,6))
+print(max("Python"))
