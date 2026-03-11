@@ -403,3 +403,4 @@ print(sorted("Python"))
 # Request('https://www.sunmoon.ac.kr') # 오류 발생
 
 import urllib.request
+urllib.request.Request('https://')
