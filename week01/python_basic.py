@@ -302,7 +302,7 @@ while i <5:
     print('*' * i)
 
 #함수 정의
-def (sum1 (a,b))
+def sum1 (a,b):
     x = a + b
     return x
 
@@ -328,3 +328,4 @@ print(abs(-3.5))
 #그룹 자료형의 변수 x의 모든 원소가 참(0이 아닌 값)이면 True반환
 print(all([1,2,3,4]))
 print(all([4,-2,0.0,4]))
+
