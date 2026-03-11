@@ -217,3 +217,29 @@ for key, value in dic.items():
     print(key + ":" + value)
     
 #원소 삭제
+dic.clear()
+print(dic)
+
+#집합 만들기
+s1 = {1,2,'a',5}
+s2 = set([1,2,3,4,5,6])
+print(s2)
+s3 = set([4,5,6,7,8,9])
+print(s3)
+
+#교집합 연산
+print(s2 & s3)
+print(s2.intersection(s3))
+
+#차집합 연산
+print(s2 - s3)
+print(s3 - s2)
+print(s2.difference(s3))
+print(s3.difference(s2))
+
+#원소 한 개 추가
+s2.add(7)
+print(s2)
+
+#원소 여러 개 추가
+s2.uppdate([6,7,8,9,10])
