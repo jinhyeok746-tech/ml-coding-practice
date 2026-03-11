@@ -430,3 +430,12 @@ f = open('example.txt', 'w')
 for i in range(6, 11):
     data = "%d번째 줄입니다.\n" % i
     f.write(data)
+f.close()
+
+#파일 모드 'r' - readline()
+f = open('example.txt', 'r')
+
+
+while True:
+    line = f.readline()
+    
