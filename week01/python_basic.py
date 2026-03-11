@@ -272,3 +272,5 @@ print('a' in ['a', 'b','c','d'])
 print('i' not in 'Python')
 
 #아무 것도 하지 않게 설정
+if money >= 10:
+    pass
