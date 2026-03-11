@@ -405,4 +405,7 @@ print(sorted("Python"))
 import urllib.request
 urllib.request.Request('https://www.sunmoon.ac.kr')
 
-impoet pandas
+import pandas
+pandas.DataFrame()
+
+from datetime import datetime
