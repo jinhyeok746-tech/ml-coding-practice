@@ -109,9 +109,15 @@ print(iris.drop('class',axis=1).agg(['sum','mean','std']))
 # print(iris.agg(['sum','mean','std'])) #class 컬럼으로 인해 에러 발생
 
 
-print(iris.head())
+print(iris['class'].unique())
+print(iris['class'].nunique())
+print(iris['class'].value_counts())
 
-print(iris.groupby('class').std())
-
-print(iris.groupby('class',axis=1).agg(['sum','mean','std']))
-
+#에제 데이터 생성
+data = {
+    'name': ['Alice', 'Bob', 'Charlie', 'David', 'Eve','Frank','Grace','Hannah'],
+    'comment_length' : [150,200,50,300,120,180,75,160],
+    'likes' : [25,30,10,45,20,35,5,28],
+    'is_spam' : [False, False, True, False, False, True, True, False],
+    'has_image' : [True, False, True, True, False, False, True, True]
+}
