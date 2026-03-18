@@ -130,9 +130,8 @@ print(result)
 
 #예제 데이터 생성
 data = {
-    'name': ['Alice', 'Bob', 'Charlie', 'David', 'Eve','Frank','Grace','Hannah'],
-    'comment_length' : [150,200,50,300,120,180,75,160],
-    'likes' : [25,30,10,45,20,35,5,28],
-    'is_spam' : [False, False, True, False, False, True, True, False],
-    'has_image' : [True, False, True, True, False, False, True, True]
+    'name': ['Alice', 'Bob', 'Charlie', 'David', 'Eve'],
+    'math': [88,92,85,95,90],
+    'science':[80,85,88,92,85],
+    'english':[]
 }
