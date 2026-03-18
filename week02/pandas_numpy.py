@@ -205,4 +205,5 @@ print(np.random.choice(['red','green','white','black','blue'],size=3, replace=Fa
 
 print(np.arange(1,11))
 print(np.arange(1,11,2))
-print(np.linspace(1,100,10)) #1부터 100
+print(np.linspace(1,100,10)) #1부터 100까지 균등한 간격의 값을 4개 추출
+
