@@ -171,4 +171,9 @@ print(np.array([1,2,3,4,5]))
 print(np.array(sample_df))
 
 sample_np = np.array(sample_df)
-print(pd.DataFrame(sample_np))
+print(pd.DataFrame(sample_np)) #컬럼명이 0,1,2,3,4
+
+print(sample_df.colums) #기존 프레임워크에서 컬럼명 가져오기
+
+print(pd.DataFrame(sample_np, colums = sample_df.colums)) #새 프레임워크에 컬럼명 붙이기
+
