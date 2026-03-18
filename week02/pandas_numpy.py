@@ -212,3 +212,17 @@ print(np.sqrt(A))
 
 print(np.arange(8).reshape(2,4)+10)
 
+#0부터 8미만까지 출력하고 (2,4) 크기로 재가공 후, 제곱하여 출력
+a = np.arange(8).reshape(2, 4) ** 2
+print(a)
+
+print(a.sum()) #모든 요소의 합
+print(a.mean()) #모든 요소의 평균
+print(a.mean(axis=0)) #열을 기준으로 연산
+
+print(a.min()) #모든 요소 중 최솟값
+print(a.max()) #모든 요소 중 최댓값
+
+print(a.max(axis=1))
+print(a.cumsum()) #모든 요소의 누적합
+print(a.argmax()) #모든 요소 중 최댓값의 인덱스
