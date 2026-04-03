@@ -47,3 +47,13 @@ ax1.set_title('Frequency of Tips by Time')
 ax2.set_title('Frequency of Tips by Time and Day')
 plt.savefig('./week04/Seaborn_Figure02.jpg')
 
+# **선형 회귀선 있는 산점도**
+# figure에 2개의 서브 플롯을 생성
+fig = plt.figure(figure=(15, 5))
+ax1 = fig.add_subplot(1, 2, 1)
+ax2 = fig.add_subplot(1, 2, 2)
+
+# 산점도에 선형 회귀선 표시(fit_reg=True)
+sns.regplot(x='total_bill', y='tip', data=tips, color='blue', scatter_kws=['s': 50, 'alpha': 0.5], line_kws={'linestyle': '--'}, ax=ax1)
+
+# 산점도에 성형 회귀선 미표시(fit_reg=False)
