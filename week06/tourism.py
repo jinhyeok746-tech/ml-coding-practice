@@ -73,6 +73,6 @@ def getTourismStatsItem(yyyymm, nat_cd, ed_cd):
     else:
         return json.loads(responseDecode)
     
-    ""### [CODE 1]"""
+    """### [CODE 1]"""
     
-    ef getRequesrUrl(url): 
+def getRequesrUrl(url): 
