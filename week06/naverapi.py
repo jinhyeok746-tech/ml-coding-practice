@@ -36,6 +36,7 @@ def main():
     print("기져온 데이터 : %d건" %(cnt))
     print('%s_naver_%s.json SAVED' % (srcText, node))
     
+    
 def getNaverSearch(node, srcText, page_start, display):
     base = "https://openapi.naver.com/v1/search"
     node = "/%s.json" % node
@@ -50,4 +51,11 @@ def getNaverSearch(node, srcText, page_start, display):
         return json.loads(responseDecode)
     
     
+def getRequestUrl(url):
+    req = urllib.request.Request(url)
     
+    req.add_header("X-Naver-Client_ID", client_id)
+    req.add_header("X-Naver_Client-Secret", client_secret)
+    
+    try:
+        
