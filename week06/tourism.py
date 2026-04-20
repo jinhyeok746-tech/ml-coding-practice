@@ -54,7 +54,7 @@ def getTourismStatsService(nat_cd, ed_cd, nStartYear, nEndYear):
                 result.append([natName, nat_cd, yyyymm, num])
                     
     return (jsonResult, result, natName, ed)
-    
+
 """### [CODE 2]"""
 
 def getTourismStatsItem(yyyymm, nat_cd, ed_cd):
@@ -75,7 +75,7 @@ def getTourismStatsItem(yyyymm, nat_cd, ed_cd):
     
 """### [CODE 1]"""
     
-def getRequesrUrl(url): #[CODE 1]
+def getRequestUrl(url): #[CODE 1]
     req = urllib.request.Request(url)
     try:
         response = urllib.request.urlopen(req)
