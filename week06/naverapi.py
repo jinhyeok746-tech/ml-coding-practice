@@ -58,4 +58,4 @@ def getRequestUrl(url):
     req.add_header("X-Naver_Client-Secret", client_secret)
     
     try:
-        
+        response = 
