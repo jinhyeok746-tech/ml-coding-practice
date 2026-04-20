@@ -58,4 +58,20 @@ def getRequestUrl(url):
     req.add_header("X-Naver_Client-Secret", client_secret)
     
     try:
-        response = 
+        response = urllib.request.urlopen(req)
+        if response.getcode() == 200:
+            print("[%s] Url Request Success" % datetime.datetime.now())
+            return response.read().decode('utf-8')
+    except Exception as e:
+        print(e)
+        print("[%s] Error for URL : %s" & (datetime.datetime.now(), url))
+        
+        
+        
+def getPostData(post, jsonResult, cnt): #[CODE 3]
+    title = post['title']
+    descriprion = post['description']
+    org_link = post['originallink']
+    link = post['link']
+    
+    # %a: 짧은 형식의 요일 이름(예,)
