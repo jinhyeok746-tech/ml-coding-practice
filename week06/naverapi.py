@@ -3,8 +3,8 @@ import urllib.request
 import datetime
 import json
 
-client_id = '5Euqo1S8TSiN5yBcAiH8'
-client_secret = '9qdWLPobOY'
+client_id = '_spvEn99rhqun61M1knu'
+client_secret = '_WzSA7HOrq'
 
 def main():
     
