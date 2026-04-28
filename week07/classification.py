@@ -65,7 +65,7 @@ from sklearn.model_selection import cross_val_predict
 
 y_train_pred = cross_val_predict(sgd_clf, X_train, y_train_5, cv=3)
 
-from sklearn.metrics import confusion_matrix
+from sklearn.metrics import confusion_matrix, precision_score
 
 confusion_matrix(y_train_5, y_train_pred)
 print(cm)
@@ -75,4 +75,5 @@ print(confusion_matrix(y_train_5, y_train_perfect_predictions)
 
 # 정밀도와 재현율
 from sklearn.metrics import precision_score, recall_score
-      (y_train_5, y_train_pred)) # == 3530 / (687 + 3530)
+
+print(precision_score(y_train_5, y_train_pred)) # == 3530 / (687 + 3530)
