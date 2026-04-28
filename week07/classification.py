@@ -4,4 +4,4 @@ mnist = fetch_openml('mnist_784', as_frame=False)
 
 print(mnist.keys()) #data와 target만 사용
 
-x, y = mnist
+x, y = mnist.data, mnist.from django.utils.translation import as _
