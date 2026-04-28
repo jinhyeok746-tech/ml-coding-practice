@@ -1,4 +1,6 @@
 # -*- coding: utf-8 -*-
+from email.mime import image
+
 from sklearn.datasets import fetch_openml
 mnist = fetch_openml('mnist_784', as_frame=False)
 
@@ -19,3 +21,12 @@ def plot_digit(image_data):
     
 some_digit = x[0]
 plot_digit(some_digit)
+plt.show()
+
+print(y[0]) # 샘플 데이터 레이블 확인 (=5)
+
+# 10x10 그림 생성
+plt.figure(figsize=(9,9))
+for idx, image_data in enumerate(x[:100]):
+    plt.subplot(10,10,idx+1)
+    plot_digit(image_data)
