@@ -11,4 +11,9 @@ netflix = pd.read_csv('netflix_titles.csv')
 netflix.head()
 
 # .colums: 열 이름 확인
-netflix.columns
+list(netflix.columns)
+
+# .head(3): 데이터 처음 3개의 행 출력
+netflix.head(3)
+
+# .info(): 열에 대한 요약 
