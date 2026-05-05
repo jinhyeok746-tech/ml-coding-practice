@@ -21,7 +21,7 @@ netflix.info()
 
 # 넷플릭스 결측치 비율 확인하기
 for i in netflix.columns:
-    missing_percentage = netflix[i].isnull().mean() * 100
+    missing_percentage = netflix[i].isna().sum()
     if missing_percentage > 0:
         
     
