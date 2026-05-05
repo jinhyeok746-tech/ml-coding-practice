@@ -1,13 +1,13 @@
 # -*- coding: utf-8 -*-
 #넷플릭스 데이터 분석 프로젝트
 
-import pandas as np
+import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 
 #세션 저장소에 업로드한 csv 파일을 읽어 변수에 할당
-netflix = pd.read_csv('netflix_titles.csv')
+netflix = pd.read_csv('data_analysis/netflix_titles.csv')
 netflix.head()
 
 # .colums: 열 이름 확인
@@ -119,7 +119,7 @@ genres
 
 # [1단계] listed_in 열에 있는 장르를 쉼표로 분할하기
 # 예시) 인덱스 1의 listed_in 열 값 : International TV shows, TV Dramas, TV Mysteries
-netflix['listed_in'].str.split(',', expend=True)
+netflix['listed_in'].str.split(',', expand=True)
 
 # [2단계] .stack( )을 사용하면 여러 열로 구성한 데이터프레임을 1개의 열로 만들어 쌓음
 # 예시) 인덱스 1의 listed_in 열 값 : International TV shows, TV Dramas, TV Mysteries
