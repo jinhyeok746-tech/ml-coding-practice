@@ -1,6 +1,8 @@
 # -*- coding: utf-8 -*-
 import matplotlib.pyplot as plt
 
+from week07.classification import X_train
+
 plt.rc('font', size=14)
 plt.rc('axes', labelsize=14, titlesize=14)
 plt.rc('legend', fontsize=14)
@@ -148,4 +150,14 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.model_selection import train_test_split
 
 X = iris.data[["petal width (cm)"]].values
-y = iris.target_names
+y = iris.target_names[iris.target] == 'virginica'
+X_train, X_test, y_train, y_test = train_test_split(X, y, random_state=42)
+
+log_reg = LogisticRegression(random_state=42)
+log_reg.fit(X_train, y_train)
+
+print(log_reg.predict([[1.7], [1.5]]))
+
+# 소프트맥스 회귀
+
+X = iris.data[["petal length(cm)", "petal width (cm)"]].values
