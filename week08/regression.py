@@ -11,5 +11,7 @@ import numpy as np
 
 np.random.seed(42)
 m = 100
-x = 2 * np.random.rand(m, 1)
-y = 4 + 3 * X
+X = 2 * np.random.rand(m, 1)
+y = 4 + 3 * X + np.random.randn(m, 1)
+
+
