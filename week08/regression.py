@@ -106,4 +106,9 @@ ridge_reg = Ridge(alpha=1, solver="cholesky")
 ridge_reg.fit(X, y)
 print(ridge_reg.predict([[1.5]]))
 
-sgd_reg = 
+sgd_reg = SGDRegressor(penalty="l2", alpha=0.1 / m, tol=None,
+                       max_iter=1000, eta0=0.01, random_state=42)
+sgd_reg.fit(X, y.ravel()) #fit()은 1D 타깃을 기대하므로 y.ravel()을 사용합니다
+print(sgd_reg.predict([[1.5]]))
+
+#확률적 평균 GD(solver="sag")도 릿지 회귀에 사용할 수 있습니다. 특히 큰 데이터셋에서 효과적입니다.
