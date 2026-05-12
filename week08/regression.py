@@ -19,6 +19,10 @@ import matplotlib.pyplot as plt
 plt.figure(figsize=(6, 4))
 plt.plot(X, y, "b.")
 plt.xlabel("$x_1$")
-plt.ylabel("$y$")
-plt.title("Linear Regression Data")
+plt.ylabel("$y$", rotation=0)
+plt.axis([0, 2, 0, 15])
+plt.grid()
 plt.show()
+
+from sklearn.linear_medel import LinearRegression
+
