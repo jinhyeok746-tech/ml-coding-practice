@@ -1,8 +1,6 @@
 # -*- coding: utf-8 -*-
 import matplotlib.pyplot as plt
 
-from week07.classification import X_train
-
 plt.rc('font', size=14)
 plt.rc('axes', labelsize=14, titlesize=14)
 plt.rc('legend', fontsize=14)
