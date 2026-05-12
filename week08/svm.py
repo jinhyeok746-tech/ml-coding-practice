@@ -20,4 +20,5 @@ X_new = [[5.5, 1.7], [5.0, 1.5]]
 print(svm_clf.predict(X_new))
 print(svm_clf.decision_fuction(X_new))
 
-# 비선형
+# 비선형 SVM 분류
+
