@@ -76,4 +76,19 @@ plt.axis([1.8, 8.5, 0.55, 0.8])
 plt.grid()
 plt.show()
 
-from
+from sklearn.metrics import silhouette_samples
+from matplotlib.ticker import FixedLocator, FixedFormatter
+
+plt.figure(figsize=(11, 9))
+
+for k in (3, 4, 5, 6):
+    plt.subplot(2, 2, k - 2)
+    model = kmeans_per_k[k - 1]
+    y_kmeans = model.labels_
+    silhouette_samples_k = silhouette_samples(X, y_kmeans)
+    plt.scatter(X[:, 0], X[:, 1], c=silhouette_samples_k, cmap="Spectral", s=1)
+    plt.xlabel("$x_1$")
+    plt.ylabel("$x_2$", rotation=0)
+    plt.title(f"$k={k}$")
+    plt.gca().set_axisbelow(True)
+    plt.grid()
