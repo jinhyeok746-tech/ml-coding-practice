@@ -168,7 +168,7 @@ plot_dbscan(dbscan2, X, size=600, show_xlabels=False)
 
 plt.show()
 
-from sklearn.metrics import KNeighborsClassifier
+from sklearn.neighbors import KNeighborsClassifier
 
 X, y = make_moons(n_samples=1000, noise=0.05, random_state=42)
 dbscan = DBSCAN(eps=0.2, min_samples=5)
