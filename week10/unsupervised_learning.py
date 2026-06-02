@@ -76,3 +76,4 @@ plt.axis([1.8, 8.5, 0.55, 0.8])
 plt.grid()
 plt.show()
 
+from
