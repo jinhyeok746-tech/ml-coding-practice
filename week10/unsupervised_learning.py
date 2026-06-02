@@ -87,7 +87,7 @@ for k in (3, 4, 5, 6):
     y_pred = kmeans_per_k[k - 1].labels_
     silhouette_coefficients = silhouette_samples(X, y_pred)
     
-    padding = len(x) // 30
+    padding = len(X) // 30
     pos = padding
     ticks = []
     for i in range(k):
