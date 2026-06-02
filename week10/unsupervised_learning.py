@@ -97,3 +97,6 @@ for k in (3, 4, 5, 6):
         color = plt.cm.spectral(i / k)
         plt.fill_betweenx(np.arange(pos, pos + len(coeffs)), 0, coeffs,
                           facecolor=color, edgecolor=color, alpha=0.7)
+        ticks.append(pos + len(coeffs) / 2)
+        pos += len(coeffs) + padding
+    
