@@ -99,4 +99,5 @@ for k in (3, 4, 5, 6):
                           facecolor=color, edgecolor=color, alpha=0.7)
         ticks.append(pos + len(coeffs) / 2)
         pos += len(coeffs) + padding
-    
+        
+    plt.gca().xaxis.set_major_locator(FixedLocator(ticks))
