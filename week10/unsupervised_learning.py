@@ -94,5 +94,6 @@ for k in (3, 4, 5, 6):
         coeffs = silhouette_coefficients[y_pred == i]
         coeffs.sort()
         
-        color = plt.cm.nipy_spectral(i / k)
-        
+        color = plt.cm.spectral(i / k)
+        plt.fill_betweenx(np.arange(pos, pos + len(coeffs)), 0, coeffs,
+                          facecolor=color, edgecolor=color, alpha=0.7)
