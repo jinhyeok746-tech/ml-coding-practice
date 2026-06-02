@@ -111,4 +111,5 @@ for k in (3, 4, 5, 6):
     else:
         plt.tick_params(labelbottom=False)
         
-    plt.axcline(x=silhouette_scores[k - 2], xy1=(0, 0), xy2=(0, len(X)), color="red", linestyle="--")
+    plt.axvline(x=silhouette_scores[k - 2], color="red", linestyle="--")
+    plt.title(f"$k={k}$")
